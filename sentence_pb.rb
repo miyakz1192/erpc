@@ -7,13 +7,13 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
   add_file("erpc/sentence.proto", :syntax => :proto3) do
     add_message "erpc.Sentence" do
       optional :no, :int64, 1
-      repeated :data, :string, 2
+      optional :score, :int64, 2
     end
     add_message "erpc.Sentences" do
       repeated :sentences, :message, 1, "erpc.Sentence"
     end
     add_message "erpc.User" do
-      optional :id, :string, 1
+      optional :id, :int64, 1
     end
   end
 end
