@@ -5,7 +5,7 @@ package erpc;
 
 // SentenceService is microservices composed of a suite of small and lightweight services.
 service SentenceService {
-  rpc ListSentence(User) returns (Sentences) {}
+  rpc ListSentences(User) returns (Sentences) {}
 }
 
 message Sentence {
