@@ -15,7 +15,7 @@ module Erpc
       self.unmarshal_class_method = :decode
       self.service_name = 'erpc.SentenceService'
 
-      rpc :ListSentence, User, Sentences
+      rpc :ListSentences, User, Sentences
     end
 
     Stub = Service.rpc_stub_class
